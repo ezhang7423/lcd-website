@@ -66,7 +66,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2210.15629.pdf"
+                  <a target="_blank" href="https://arxiv.org/pdf/2210.15629.pdf"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -75,7 +75,8 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2210.15629" class="external-link button is-normal is-rounded is-dark">
+                  <a target="_blank" href="https://arxiv.org/abs/2210.15629"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
@@ -84,7 +85,7 @@
                 </span>
                 <!-- Video Link. -->
                 <!-- <span class="link-block">
-                  <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                  <a target="_blank" href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -94,20 +95,22 @@
                 </span> -->
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <a target="_blank" href="https://github.com/ezhang7423/language-control-diffusion"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code (coming soon)</span>
+                    <span>Code</span>
                   </a>
                 </span>
                 <!-- Dataset Link. -->
                 <span class="link-block">
-                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                  <a target="_blank" href="https://github.com/ezhang7423/hulc-data"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="far fa-images"></i>
                     </span>
-                    <span>Data (coming soon)</span>
+                    <span>Data</span>
                   </a>
               </div>
 
@@ -227,46 +230,133 @@
       <!--/ Paper video. -->
     </div>
   </section>
+  <section class="section">
+    <div class="container is-max-desktop">
 
+      <div class="columns is-centered">
+
+        <!-- Visual Effects. -->
+        <div class="column">
+          <div class="content">
+            <h2 class="title is-3">Long-Horizon Performance</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos necessitatibus eius
+              perspiciatis magnam, nesciunt, ab quam atque velit aliquid repellendus pariatur. Porro consequatur
+              repudiandae aliquam rem nostrum perferendis voluptate?
+            </p>
+            <div class="has-text-centered">
+              <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/todo.mp4" type="video/mp4">
+              </video>
+            </div>
+
+          </div>
+        </div>
+        <!--/ Visual Effects. -->
+      </div>
+
+      <div class="columns is-centered">
+        <!-- Matting. -->
+        <div class="column">
+          <h2 class="title is-3">Language Generalization</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos necessitatibus eius
+                perspiciatis magnam, nesciunt, ab quam atque velit aliquid repellendus pariatur. Porro consequatur
+                repudiandae aliquam rem nostrum perferendis voluptate?
+              </p>
+              <div class="has-text-centered">
+                <video id="matting-video" controls playsinline height="100%">
+                  <source src="./static/videos/todo.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--/ Matting. -->
+
+      <!-- Animation. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Efficient Training & Inference</h2>
+
+          <!-- Interpolating. -->
+          <h3 class="title is-4">Latent Diffusion</h3>
+          <div class="content has-text-justified">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos necessitatibus eius
+              perspiciatis magnam, nesciunt, ab quam atque velit aliquid repellendus pariatur. Porro consequatur
+              repudiandae aliquam rem nostrum perferendis voluptate?
+            </p>
+          </div>
+
+        </div>
+        <br />
+        <!--/ Interpolating. -->
+      </div>
+
+      <!--/ Animation. -->
+
+
+      <!-- Concurrent Work. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Related Work</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              This project is built on some exceptional prior work.
+
+            </p>
+            <p>
+              <a href="https://diffusion-planning.github.io/">Planning with Diffusion for Flexible Behavior
+                Synthesis</a> introduces the base diffusion-based planning model that we adopt as the high-level policy.
+            </p>
+            <p>
+              <a href="http://calvin.cs.uni-freiburg.de/">CALVIN</a>
+              provides the dataset and benchmark for evaluating the performance of our agent.
+            </p>
+            <p>
+              Finally, <a href="http://hulc.cs.uni-freiburg.de/">HULC</a> offers a strong baseline policy that we use
+              for comparison and as our low-level controller.,
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Concurrent Work. -->
+
+    </div>
+  </section>
 
   <!--/ Animation. -->
 
 
-  <!-- Concurrent Work. -->
-  <!-- <div class="columns is-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Related Links</h2>
-
-          <div class="content has-text-justified">
-            <p>
-              There's a lot of excellent work that was introduced around the same time as ours.
-            </p>
-            <p>
-              <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an
-              idea similar to our windowed position encoding for coarse-to-fine optimization.
-            </p>
-            <p>
-              <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a
-                href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-              both use deformation fields to model non-rigid scenes.
-            </p>
-            <p>
-              Some works model videos with a NeRF by directly modulating the density, such as <a
-                href="https://video-nerf.github.io/">Video-NeRF</a>, <a
-                href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a
-                href="https://neural-3d-video.github.io/">DyNeRF</a>
-            </p>
-            <p>
-              There are probably many more by the time you are reading this. Check out <a
-                href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a
-                href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-            </p>
-          </div>
-        </div>
-      </div> -->
-  <!--/ Concurrent Work. -->
-
   </div>
+  </section>
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Get Started</h2>
+      <pre><code>$ git clone git@github.com:ezhang7423/language-control-diffusion.git 
+$ make install && conda activate lcd
+$ lcd                                                                                             
+ Usage: lcd [OPTIONS] COMMAND [ARGS]...                                                      
+                                                                                             
+╭─ Options ─────────────────────────────────────────────────────────────────────────────────╮
+│ --install-completion          Install completion for the current shell.                   │
+│ --show-completion             Show completion for the current shell, to copy it or        │
+│                               customize the installation.                                 │
+│ --help                        Show this message and exit.                                 │
+╰───────────────────────────────────────────────────────────────────────────────────────────╯
+╭─ Commands ────────────────────────────────────────────────────────────────────────────────╮
+│ rollout        Rollout in the environment for evaluation or dataset collection            │
+│ train_hulc     Train the original hulc model                                              │
+│ train_lcd      Train the original hulc model                                              │
+╰───────────────────────────────────────────────────────────────────────────────────────────╯
+</code></pre>
+    </div>
   </section>
 
 
