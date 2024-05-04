@@ -255,14 +255,32 @@
           </div>
           <br />
         </div>
-        <h2 class="title is-3">Robust Against Parameter Changes</h2>
+        <div>Through the usage of DDIM, temporal abstraction, and low-dimensional generation, we find in
+          this figure that LCD is significantly faster during rollout and training than Diffuser. In addition, our
+          method is significantly faster to train than HULC, albeit slower during rollout. This is to be expected,
+          as HULC is not a diffusion model and only requires a single forward pass for generation. However,
+          when comparing to other diffusion models we find that our method is 3.3x-15x faster during inference
+          and 1.5x-3.7x faster during training, answering our second research question regarding how much
+          efficiency is gained by planning in a latent space. All numbers are taken from our own experiments
+          and server for reproducibility and fairness, including baselines.</div>
+        <h2 class="title is-3">Robust Against Hyperparameters</h2>
         <div class="columns is-centered has-text-centered">
           <div class="column is-full-width">
-            <img style="width: 800px" src="./static/images/heatmap.pdf" alt="heatmap">
+            <img style="width: 800px" src="./static/images/heatmap.png" alt="heatmap">
           </div>
-          <br />
         </div>
+        <div>In this figure, we show that our diffusion method is robust to several hyperparameters including a frame
+          offset o and the hidden dimensions of the model. Frame offset o controls the spacing between goal
+          states in the sampled latent plan, which affects the temporal resolution of the representations. We
+          consider augmenting our dataset by sampling a d ~ Unif[-o, o] for goal state s<sub>c+d</sub> rather than
+          just
+          s<sub>c</sub>, potentially improving generalization. However, we find that this effect is more or less
+          negligible.
+          Finally, we find our method is also robust with respect to the number of parameters, and instantiating
+          a larger model by increasing the model dimensions does not induce overfitting.</div>
+        <br />
       </div>
+    </div>
     </div>
   </section>
 
